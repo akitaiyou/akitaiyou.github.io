@@ -3,8 +3,10 @@ subtitle: '283 pro'
 description: ''
 keywords: ALT, ALT.sd, tech, technology, game, music, 游戏, blog, 博客
 author: ALT
-language: #en
-- zh-CN
+language: 
+-zh-CN
+- zh-tw
+- en
 timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -29,7 +31,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-  启用: true # Open external links in new tab
+enbale: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
@@ -38,14 +40,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  启用: true
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  启用: false
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -98,5 +100,3 @@ deploy:
   type: 'git'
   repo: https://github.com/akitaiyou/akitaiyou.github.io/
   branch: gh-pages
-  aplayer: 
-   meting: true
