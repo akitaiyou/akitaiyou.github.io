@@ -3,9 +3,8 @@ subtitle: '283 pro'
 description: ''
 keywords: ALT, ALT.sd, tech, technology, game, music, 游戏, blog, 博客
 author: ALT
-language: - zh-CN
-          - zh-tw
-          - en
+language: #en
+- zh-CN
 timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -30,7 +29,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-  enable: true # Open external links in new tab
+  启用: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
@@ -87,7 +86,7 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
-ignore:
+ignore: 
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
