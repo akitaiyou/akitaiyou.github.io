@@ -3,28 +3,27 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
-
+标题: ALT's blog
+subtitle: '283 pro'
+描述: ''
+keywords: ALT, ALT.sd, tech, technology, game, music, 游戏, blog, 博客
+作者: ALT
+编程语言: #en
+- zh-CN
+timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://hiori.xyz/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
-
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
+source_dir: 来源
+public_dir: 公共
+tag_dir: 标签
+archive_dir: 档案
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -35,7 +34,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-  enable: true # Open external links in new tab
+  启用: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
@@ -44,14 +43,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  启用: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  启用: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -92,7 +91,7 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
-ignore:
+忽略:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -102,4 +101,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  类型: 'git'
+  repo: git@github.com:akitaiyou/akitaiyou.github.io.git
+  分支: gh-pages
