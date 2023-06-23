@@ -1,0 +1,1 @@
+# akitaiyou.github.io
