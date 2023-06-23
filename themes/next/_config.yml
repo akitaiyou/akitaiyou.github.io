@@ -995,3 +995,13 @@ vendors:
 css: css
 js: js
 images: images
+aplayer:
+  meting: true
+  asset_inject: false
+inject:
+  head:
+  bottom:
+  - <div class="aplayer no-destroy" data-id="7422861869" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div>
+pjax:
+  enable: true
+  exclude:
