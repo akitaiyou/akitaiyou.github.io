@@ -1,1 +1,1 @@
-# akitaiyou.github.io
+hiori.xyz
