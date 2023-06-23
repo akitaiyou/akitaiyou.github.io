@@ -1,1 +1,3 @@
-
+[submodule "theme-next-docs"]
+  path = theme-next-docs
+  url = https://github.com/theme-next/theme-next-docs.git
