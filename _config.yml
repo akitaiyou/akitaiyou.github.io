@@ -96,10 +96,10 @@ exclude:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: 下一页
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   类型: 'git'
-  repo: git@github.com:akitaiyou/akitaiyou.github.io.git
+  repo: https://github.com/akitaiyou/akitaiyou.github.io/
   分支: gh-pages
