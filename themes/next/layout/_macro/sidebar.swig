@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <!-- require MetingJS-->
     <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> 
-    <!--网易云-->   
+     <!--网易云-->   
     <meting-js
       server="netease"
       id="7088677042"
@@ -28,7 +28,7 @@
       preload="auto"
       mutex="true">
     </meting-js>
-    {%- set display_toc = page.toc.enable and display_toc %}
+      {%- set display_toc = page.toc.enable and display_toc %}
       {%- if display_toc %}
         {%- set toc = toc(page.content, { class: "nav", list_number: page.toc.number, max_depth: page.toc.max_depth }) %}
         {%- set display_toc = toc.length > 1 and display_toc %}
