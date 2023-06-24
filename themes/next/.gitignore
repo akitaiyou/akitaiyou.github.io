@@ -5,10 +5,6 @@
 yarn.lock
 package-lock.json
 node_modules/
-
-# Ignore optional external libraries
-
-
 # Track internal libraries & Ignore unused verdors files
 !source/lib/font-awesome/
 !source/lib/anime.min.js
