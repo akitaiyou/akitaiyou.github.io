@@ -24,7 +24,27 @@
         <div class="content-wrap">
           {% include '_partials/header/sub-menu.swig' %}
           <div class="content {% block class %}{% endblock %}">
-            {% block content %}{% endblock %}
+            {% block content %}
+            <!-- 引用依赖 -->
+<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+
+<!-- 我使用的APlayer本体 -->
+<div class="aplayer" 
+  data-id="7088677042" 
+  data-server="netease" 
+  data-type="playlist" 
+  data-fixed="true" 
+  data-autoplay="true" 
+  data-order="random" 
+  data-volume="0.55" 
+  data-theme="#cc543a" 
+  data-preload="auto" >
+  </div>
+<!--如果将本体放在body里面导致页面加载出现问题，请尝试放到body体后面-->
+{% endblock %}
           </div>
           {% include '_partials/comments.swig' %}
         </div>
