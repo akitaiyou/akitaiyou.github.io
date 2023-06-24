@@ -7,7 +7,10 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-
+     <!--网易云插件-->
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+      src="//music.163.com/outchain/player?type=2&id=7088677042&auto=0&height=66">
+  </iframe>
       {%- set display_toc = page.toc.enable and display_toc %}
       {%- if display_toc %}
         {%- set toc = toc(page.content, { class: "nav", list_number: page.toc.number, max_depth: page.toc.max_depth }) %}
