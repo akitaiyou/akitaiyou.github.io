@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script> 
 	<!--网易云-->   
     <div class="aplayer" 
-      data-id="7088677042" 
+      data-id="3744138" 
       data-server="netease" 
       data-type="playlist" 
       data-fixed="false" 
