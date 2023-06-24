@@ -172,7 +172,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-06-24 19:50:30 / 修改时间：19:51:49" itemprop="dateCreated datePublished" datetime="2023-06-24T19:50:30+08:00">2023-06-24</time>
+              <time title="创建时间：2023-06-24 19:50:30 / 修改时间：19:51:17" itemprop="dateCreated datePublished" datetime="2023-06-24T19:50:30+08:00">2023-06-24</time>
             </span>
 
           
@@ -186,7 +186,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>加入了音乐播放器功能。</p>
+          <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>加入了音乐播放器功能。</p>
 
       
     </div>
@@ -231,7 +231,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-06-24 10:19:55 / 修改时间：19:51:49" itemprop="dateCreated datePublished" datetime="2023-06-24T10:19:55+08:00">2023-06-24</time>
+              <time title="创建时间：2023-06-24 10:19:55 / 修改时间：22:02:55" itemprop="dateCreated datePublished" datetime="2023-06-24T10:19:55+08:00">2023-06-24</time>
             </span>
 
           
@@ -355,7 +355,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-24 19:51:49" itemprop="dateModified" datetime="2023-06-24T19:51:49+08:00">2023-06-24</time>
+                <time title="修改时间：2023-06-24 22:02:55" itemprop="dateModified" datetime="2023-06-24T22:02:55+08:00">2023-06-24</time>
               </span>
 
           
@@ -431,7 +431,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <!-- require MetingJS-->
     <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> 
-    <!--网易云-->   
+     <!--网易云-->   
     <meting-js
       server="netease"
       id="7088677042"
@@ -485,6 +485,9 @@
       <span class="links-of-author-item">
         <a href="https://twitter.com/xinyouan1161" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;xinyouan1161" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
       </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/Meltrylilys" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Meltrylilys" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
   </div>
 
 
@@ -532,6 +535,7 @@
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -545,6 +549,65 @@
 
 <script src="/js/next-boot.js"></script>
 
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
 
 
 
@@ -564,9 +627,11 @@
 
 
 
+    <div id="pjax">
   
 
   
 
+    </div>
 </body>
 </html>
