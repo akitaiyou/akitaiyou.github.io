@@ -98,3 +98,5 @@ deploy:
   type: 'git'
   repo: https://github.com/akitaiyou/akitaiyou.github.io/
   branch: gh-pages
+  aplayer:
+  meting: true

@@ -25,6 +25,8 @@
           {% include '_partials/header/sub-menu.swig' %}
           <div class="content {% block class %}{% endblock %}">
             {% block content %}{% endblock %}
+            {% meting "7088677042" "netease" "playlist" "autoplay" "mutex:true" "listmaxheight:340px" "preload:none" "theme:#ad7a86" %}
+
           </div>
           {% include '_partials/comments.swig' %}
         </div>
