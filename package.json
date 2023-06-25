@@ -12,7 +12,6 @@
     "version": "6.3.0"
   },
   "dependencies": {
-    "@waline/hexo-next": "^3.0.1",
     "hexo": "^6.3.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
@@ -29,8 +28,5 @@
     "hexo-theme-next": "^8.17.0",
     "install": "^0.13.0",
     "npm": "^9.7.2"
-  },
-  "devDependencies": {
-    "@waline/client": "^2.15.5"
   }
 }
