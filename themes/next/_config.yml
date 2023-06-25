@@ -618,7 +618,7 @@ valine:
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: "输入你的评论\n昵称为必填项目，输入QQ号可以直接获取用户名和头像，并且省去了填写邮箱的麻烦！\n虽然email不是必选，但是填写了email可以收到推送通知哦！" # Comment box placeholder
-  avatar: mm    # Gravatar style
+  avatar: "" # Gravatar style
   meta: [nick, mail] # Custom comment header
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
