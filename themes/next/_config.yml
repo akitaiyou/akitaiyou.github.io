@@ -117,13 +117,14 @@ darkmode: true
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  #about: /about/ || fa fa-user
+  about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
   #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
+  guestbook: /guestbook/ || fa fa-book
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -562,14 +563,7 @@ quicklink:
 # ---------------------------------------------------------------
 
 # Multiple Comment System Support
-<<<<<<< HEAD
-comments: ture
-=======
 comments:
-<<<<<<< HEAD
->>>>>>> parent of 1b74566 (guest)
-=======
->>>>>>> parent of 1b74566 (guest)
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default.
@@ -618,9 +612,9 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true
+  appid: L34yiivWRRvJLfVKEvXi3a4P-MdYXbMMI
+  appkey: sJWn5EZh7GT9hpbUiECxEEw0
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
