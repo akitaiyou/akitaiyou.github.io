@@ -566,6 +566,9 @@ quicklink:
 comments: ture
 =======
 comments:
+<<<<<<< HEAD
+>>>>>>> parent of 1b74566 (guest)
+=======
 >>>>>>> parent of 1b74566 (guest)
   # Available values: tabs | buttons
   style: tabs
