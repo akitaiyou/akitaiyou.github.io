@@ -567,8 +567,8 @@ comments:
   # Available values: tabs | buttons
   style: tabs
   # Choose a comment system to be displayed by default.
-  # Available values: changyan | disqus | disqusjs | gitalk | livere | waline
-  active: waline
+  # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
+  active: valine
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -609,12 +609,12 @@ changyan:
   appkey:
   #post_meta_order: 0
 
-# Waline
-# For more information: https://Waline.js.org, https://github.com/walinejs/waline
-waline:
-  enable: false
-  appid: 
-  appkey: 
+# Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+valine:
+  enable: true
+  appid: L34yiivWRRvJLfVKEvXi3a4P-MdYXbMMI
+  appkey: sJWn5EZh7GT9hpbUiECxEEw0
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Just go go # Comment box placeholder
@@ -625,7 +625,7 @@ waline:
   visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
-  serverURLs: https://sub-waline.vercel.app/ # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  serverURLs:  # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   enableQQ: true # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: [nick] # Set required fields: [nick] | [nick, mail]
   #post_meta_order: 0
