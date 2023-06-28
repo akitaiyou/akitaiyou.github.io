@@ -18,6 +18,8 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<!-- Waline -->
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -345,6 +347,9 @@
 
           </div>
           
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -358,6 +363,9 @@
         activeTab.click();
       }
     }
+     init({
+    el: '#waline',
+    serverURL: 'https://sub-waline.vercel.app/',
   });
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
@@ -367,7 +375,7 @@
     });
   }
 </script>
-
+</script>
         </div>
           
   
