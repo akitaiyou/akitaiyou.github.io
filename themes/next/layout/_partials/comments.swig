@@ -59,6 +59,9 @@
     {%- endif %}
   {%- endif %}
 {%- endif %}
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -72,6 +75,9 @@
         activeTab.click();
       }
     }
+     init({
+    el: '#waline',
+    serverURL: 'https://sub-waline.vercel.app/',
   });
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
@@ -80,4 +86,5 @@
       localStorage.setItem('comments_active', commentClass);
     });
   }
+</script>
 </script>
