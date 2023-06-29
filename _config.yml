@@ -101,7 +101,7 @@ theme: next
 
 theme_config:
   valine:
-    enable: true
+    enable: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
