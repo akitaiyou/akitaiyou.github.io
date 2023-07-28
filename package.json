@@ -28,7 +28,7 @@
     "hexo-tag-dplayer": "^0.3.3",
     "hexo-tag-embed": "^1.0.0-rc.1",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-next": "^8.17.0",
+    "hexo-theme-next": "^8.17.1",
     "install": "^0.13.0",
     "npm": "^9.8.1"
   }
