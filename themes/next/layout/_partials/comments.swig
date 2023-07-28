@@ -59,14 +59,6 @@
     {%- endif %}
   {%- endif %}
 {%- endif %}
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
-  init({
-    el: '#waline',
-    serverURL: 'https://sub-waline.vercel.app/',
-  });
-</script>
 
 <script>
   window.addEventListener('tabs:register', () => {
