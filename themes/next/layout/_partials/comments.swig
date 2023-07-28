@@ -91,5 +91,5 @@
       localStorage.setItem('comments_active', commentClass);
     });
   }
-}
+})
 </script>
