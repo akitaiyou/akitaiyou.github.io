@@ -388,18 +388,14 @@
         activeTab.click();
       }
     }
-     init({
-    el: '#waline',
-    serverURL: 'https://sub-waline.vercel.app/',
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-})
+    if (CONFIG.comments.storage) {
+      window.addEventListener('tabs:click', event => {
+        if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+        let commentClass = event.target.classList[1];
+        localStorage.setItem('comments_active', commentClass);
+      });
+    }
+  })
 </script>
 
         </div>
@@ -434,10 +430,6 @@
       preload="auto"
       mutex="true">
     </meting-js>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <!-- require MetingJS-->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
