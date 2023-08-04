@@ -72,12 +72,12 @@
         activeTab.click();
       }
     }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
+    if (CONFIG.comments.storage) {
+      window.addEventListener('tabs:click', event => {
+        if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+        let commentClass = event.target.classList[1];
+        localStorage.setItem('comments_active', commentClass);
+      });
+    }
+  })
 </script>

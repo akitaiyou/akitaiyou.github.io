@@ -35,6 +35,9 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
+image_link:
+  enable: true
+  typora_mode: true
 marked:
   prependRoot: true
   postAsset: true
@@ -95,6 +98,19 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+symbols_count_time:
+  #文章内是否显示
+  symbols: true
+  time: true
+  # 网页底部是否显示
+  total_symbols: true
+  total_time: true
+
+
+theme_config:
+  valine:
+    enable: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
